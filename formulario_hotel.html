@@ -6,12 +6,19 @@
 <body>
     <h2>Agregar Hotel</h2>
     <form action="insertar_hotel.php" method="POST" onsubmit="return validarHotel()">
-        Nombre: <input type="text" name="nombre del hotel" required><br>
-        Ubicación: <input type="text" name="ubicacion" required><br>
-        habitaciones_disponibles: <input type="number" name="habitaciones_disponibles" required><br>
-        Precio por Noche: <input type="number" step="0.01" name="precio_noche" required><br>
+        <label for="nombre_hotel">Nombre:</label>
+        <input type="text" id="nombre_hotel" name="nombre_hotel" required><br>
+        
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion" required><br>
+        
+        <label for="habitaciones_disponibles">Habitaciones disponibles:</label>
+        <input type="number" id="habitaciones_disponibles" name="habitaciones_disponibles" required><br>
+        
+        <label for="precio_noche">Precio por Noche:</label>
+        <input type="number" id="precio_noche" step="0.01" name="precio_noche" required><br>
+        
         <input type="submit" value="Agregar">
     </form>
-    
 </body>
 </html>
